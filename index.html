@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ペアマッチゲーム</title>
+    <link rel="stylesheet" href="./css/base_styles.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+
+<body>
+    <div id="game-board" class="container">
+        <h1>メモリーゲーム:クラス氏名</h1>
+        <h2>10回のチャレンジのうちにタイルに隠れた同じ絵柄のカードを見つけてください</h2>
+        <h3>※ゆっくりプレイしてね</h3>
+        <h1><button id="startButton" class="btn btn-lg btn-primary">スタート</button>
+            チャレンジ：<label id="charengeCount">0</label>
+        </h1>
+
+        <div class="row">
+            <div class="col tile" tile-data="❓">❓</div>
+            <div class="col tile" tile-data="❓">❓</div>
+            <div class="col tile" tile-data="❓">❓</div>
+            <div class="col tile" tile-data="❓">❓</div>
+        </div>
+        <div class="row">
+            <div class="col tile" tile-data="❓">❓</div>
+            <div class="col tile" tile-data="❓">❓</div>
+            <div class="col tile" tile-data="❓">❓</div>
+            <div class="col tile" tile-data="❓">❓</div>
+        </div>
+        <div class="row">
+            <div class="col tile" tile-data="❓">❓</div>
+            <div class="col tile" tile-data="❓">❓</div>
+            <div class="col tile" tile-data="❓">❓</div>
+            <div class="col tile" tile-data="❓">❓</div>
+        </div>
+        <div class="row">
+            <div class="col tile" tile-data="❓">❓</div>
+            <div class="col tile" tile-data="❓">❓</div>
+            <div class="col tile" tile-data="❓">❓</div>
+            <div class="col tile" tile-data="❓">❓</div>
+        </div>
+        <h1 style="text-align:center" id="finalmessage_area">
+            残り<span id="restCount">0</span>ペア
+        </h1>
+    </div>
+
+</body>
+
+</html>
