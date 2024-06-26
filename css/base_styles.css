@@ -1,0 +1,7 @@
+  
+  .tile {
+    background-color: #F0F0F0;
+    font-size: 8rem;
+    border: 1rem solid #999;
+    cursor: pointer;
+  }
