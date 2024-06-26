@@ -18,7 +18,7 @@ let restCount = tile_pattern.length / 2;
 // ゲームスタートボタンをクリックしたときに呼ばれる関数処理を用意
 let onStartButtonClick = function () {
     // ゲームスタートボタンを無効化
-    startButton.disabled = XXXXXXXX;
+    startButton.disabled = true;
     // リストのタイルすべてに対してループ
     for (let i = 0; i < tileList.length; i++) {
         // 「tile-data」という自前の属性にタイルの種類を記憶させる
@@ -40,7 +40,7 @@ let onStartButtonClick = function () {
 
 // タイルをクリックしたときに呼ばれる関数処理を用意
 let onTileClick = function (event) {
-    // クリックされたタイルを取得
+    // クリック選択されたタイルを取得
     const clickedTile = event.target;
     if (firstTile === null) {
         // １枚目のタイルが選択されていない場合
@@ -115,7 +115,7 @@ window.onload = function () {
     // 「tile」というクラス名を持つ要素をすべてリストの形で取得
     tileList = document.getElementsByClassName('tile');
     // チャレンジカウントを表示する
-    document.getElementById('charengeCount').innerHTML = charengeCount;
+    document.getElementById('charengeCount').innerHTML = XXXXXXXX;
     // マッチしていない残りのタイルペアを表示する
-    document.getElementById('restCount').innerHTML = restCount;
+    document.getElementById('restCount').innerHTML = XXXXXXXX;
 }
